@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/icon" sizes="32x32" href="images/favicon.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Offer a list of pages within our website. Give your brief overview of our content structure and easy navigation experience">
+    <meta name="keywords" content="bangkok, thai restaurants, local, bangkok activities">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mue Tanpairoj">
+    <title>Site Map</title>
+    <script src="https://kit.fontawesome.com/4261af9220.js" crossorigin="anonymous"></script>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .container{
+            height: 60vh;
+            width: 100%;
+            background: linear-gradient(rgba(64, 58, 58, 0.723),
+            rgba(213, 213, 213, 0)), url(images/bangkok-home-8.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        .logo a{
+            font-size: 80px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 40px;
+
+        }
+        nav ul li a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 60px;
+        }
+        nav ul li a:hover{
+            color: #a79e98;
+            transition: .3s;
+        }
+        /* table */
+      table {
+        border-collapse: collapse;
+        border: 2px solid #d5bdaf;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      tr {
+        background-color: #edede9;
+      }
+      tr:hover {
+        background-color: #e3d5ca;
+      }
+      tr#top {
+        background-color: #e3d5ca;
+        font-weight: bold;
+      }
+      h1{
+        font-size: 80px;
+      }
+      td{
+        font-size: 60px;
+      }
+     /* footer */
+   footer{
+            position: relative;
+            width: 100%;
+            background-color: #e3d5ca;
+            min-height: 100px;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+            position: fixed;
+            display: block;            
+            bottom: 0;
+        }
+        footer .links, 
+        footer .menu{
+            position: relative;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            flex-wrap: wrap;
+        }
+        footer .links li,
+        footer .menu li{
+            list-style-type: none;
+        }
+        footer .links li a{
+            font-size: 60px;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+        }
+        footer .links li a:hover{
+            transform: translateY(-10px);
+            color: #695c54;
+        }
+        footer .menu li a{
+            font-size: 60px;
+            color: rgb(255, 255, 255);
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+        footer .menu li a:hover{
+            color: #695c54;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <nav>
+            <h2 class="logo"><a href="1-index.html">Bangkok</a></h2>
+                <ul>
+                    <li><a href="2-eat.html">EAT</a></li>
+                    <li><a href="4-play.html">PLAY</a></li>
+                    <li><a href="3-bar.html">BAR</a></li>
+                </ul>
+        </nav>
+    </div>
+    <h1>Come2BKK Site Map</h1>
+    <table>
+      <tr id="top">
+        <td>Pages</td>
+        <td>Descriptions</td>
+      </tr>
+      <tr>
+        <td><a href="1-index.html">Home Page</a></td>
+        <td>Introducing the user to the website and its purpose.</td>
+      </tr>
+      <tr>
+        <td><a href="2-eat.html">Eats</a></td>
+        <td>List of recommended Thai restaurants in Bangkok.</td>
+      </tr>
+      <tr>
+        <td><a href="3-bar.html">Bars</a></td>
+        <td>List of well-known local bars in Bangkok. Different themes and aesthetics.</td>
+      </tr>
+      <tr>
+        <td><a href="4-play.html">Play</a></td>
+        <td>List of activities you should do while you're in Bangkok. </td>
+      </tr>
+      <tr>
+        <td><a href="6-contact.html">Contact Page</a></td>
+        <td>Visitors can provide feedbacks or contact for work purposes</td>
+      </tr>
+    </table>
+    <footer>
+        <ul class="links">
+            <li><a href="https://www.facebook.com/AmazingThailand/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/tourismthailand/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href = mailto:"ntanpairoj1@babson.edu"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="1-index.html">Home</a></li>
+            <li><a href="5-sitemap.html">Sitemap</a></li>
+            <li><a href="6-contact.html">Contact</a></li>
+        </ul>
+    </footer>   
+  </body>
+</html>
