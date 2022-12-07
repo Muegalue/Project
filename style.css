@@ -1,0 +1,155 @@
+h1,
+h2,
+h3 {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-weight: 800;
+  color: black;
+  margin: 1.6rem 0;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 20px;
+}
+span {
+  font-size: 16px;
+}
+p {
+  font-size: 16px;
+}
+/* nav */
+.container {
+  height: 10vh;
+  width: 100%;
+  background-color: #d6ccc2;
+}
+.logo a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 40px;
+}
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: #7a6c63;
+  transition: 0.3s;
+}
+/*hero*/
+.hero {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  position: relative;
+}
+.hero .left {
+  background-image: url(images/eat-3.jpeg);
+  background-size: cover;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero .right {
+  background-color: #d6ccc2;
+}
+.hero .content-box {
+  position: absolute;
+  background-color: white;
+  padding: 32px;
+  width: 35%;
+  top: 50%;
+  left: 65%;
+  transform: translate(-20%, -50%);
+}
+
+/*blog*/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+}
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 48px;
+}
+.blog .thumbnail {
+  object-fit: contain;
+}
+.blog-post {
+  background-color: #edede9;
+  margin: 24px 0;
+  padding: 16px;
+}
+.blog-content {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+img {
+  width: 100%;
+}
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  background-color: #e3d5ca;
+  min-height: 50px;
+  padding: 20px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+footer .links,
+footer .menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+footer .links li,
+footer .menu li {
+  list-style-type: none;
+}
+footer .links li a {
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+footer .links li a:hover {
+  transform: translateY(-10px);
+  color: #695c54;
+}
+footer .menu li a {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+}
+footer .menu li a:hover {
+  color: #695c54;
+}

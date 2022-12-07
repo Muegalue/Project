@@ -23,7 +23,7 @@
             background-position: center;
         }
         .logo a{
-            font-size: 80px;
+            font-size: 20px;
             color: rgb(255, 255, 255);
             text-decoration: none;
         }
@@ -45,7 +45,7 @@
             color: rgb(255, 255, 255);
             text-decoration: none;
             font-weight: bold;
-            font-size: 60px;
+            font-size: 16px;
         }
         nav ul li a:hover{
             color: #a79e98;
@@ -69,12 +69,13 @@
         font-weight: bold;
       }
       h1{
-        font-size: 80px;
+        font-size: 20px;
       }
       td{
-        font-size: 60px;
+        font-size: 20px;
       }
      /* footer */
+   /* footer */
    footer{
             position: relative;
             width: 100%;
@@ -85,9 +86,6 @@
             align-items: center;
             flex-direction: column;
             margin-top: 20px;
-            position: fixed;
-            display: block;            
-            bottom: 0;
         }
         footer .links, 
         footer .menu{
@@ -103,8 +101,8 @@
             list-style-type: none;
         }
         footer .links li a{
-            font-size: 60px;
-            padding: 20px;
+            font-size: 20px;
+            padding: 10px;
             color: rgb(255, 255, 255);
             margin: 0 10px;
             display: inline-block;
@@ -115,7 +113,7 @@
             color: #695c54;
         }
         footer .menu li a{
-            font-size: 60px;
+            font-size: 20px;
             color: rgb(255, 255, 255);
             margin: 0 10px;
             display: inline-block;
@@ -124,6 +122,37 @@
         }
         footer .menu li a:hover{
             color: #695c54;
+        }
+        footer{
+            position: relative;
+            width: 100%;
+            background-color: #e3d5ca;
+            min-height: 100px;
+            padding: 20px 50px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+       /* Phone view */
+        @media screen and (orientation:portrait){
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 10px;
+        }
+        footer{
+            /* position: relative; */
+            width: auto;            
+            background-color: #e3d5ca;
+            min-height: 100px;
+            /* padding: 20px 50px; */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
         }
     </style>
   </head>
@@ -172,7 +201,7 @@
             <li><a href = mailto:"ntanpairoj1@babson.edu"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
         <ul class="menu">
-            <li><a href="1-index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="5-sitemap.html">Sitemap</a></li>
             <li><a href="6-contact.html">Contact</a></li>
         </ul>

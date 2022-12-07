@@ -9,70 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Mue Tanpairoj">
     <title>Bar</title>
-
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/4261af9220.js" crossorigin="anonymous"></script>
-   
-   <style>
-        h1,h2,h3{
-            /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-            font-weight: 800;
-            color: black;
-            margin: 1.6rem 0;
-        }
-        h2{
-            font-size: 60px;
-        }
-        h3{
-            font-size: 50px;
-        }
-        span{
-            font-size: 40px;
-        }
-        p{
-            font-size: 40px;
-        }
-        /* nav */
-        .container{
-            height: 10vh;
-            width: 100%;
-            background-color: #d6ccc2 ;
-        }
-        .logo a{
-            font-size: 80px;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 20px;
-            padding-right: 5%;
-            padding-left: 5%;
-        }
-        nav ul li{
-            list-style-type: none;
-            display: inline-block;
-            padding: 10px 40px;
-
-        }
-        nav ul li a{
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 60px;
-        }
-        nav ul li a:hover{
-            color: #7a6c63;
-            transition: .3s;
-        }
-        /*hero*/
-        .hero{
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            position: relative;
-        }
+    <link rel="stylesheet" href="style.css" />
+    <style>
         .hero .left{
             background-image: url(play/nap-elite-2.jpeg);
             background-size: cover;
@@ -80,96 +18,11 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-        .hero .right{
-            background-color: #d6ccc2 ;
-        }
-        .hero .content-box{
-            position: absolute;
-            background-color: white;
-            padding: 32px;
-            width: 35%;
-            top: 50%;
-            left: 65%;
-            transform: translate(-20%,-50%)
-        }
-
-        /*blog*/
-        main{
-            display: grid;
-            grid-template-columns: 1fr;
-            margin-top: 50px;
-        }
-        .blog{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 48px;
-        }
-        .blog .thumbnail{
-            object-fit: contain;
-        }
-        .blog-post{
-            background-color: #edede9;
-            margin: 24px 0;
-            padding: 16px;
-        }
-        .blog-content{
-            margin-top: 40px;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-        img{
-            width: 100%;
-        }
-         /* footer */
-         footer{
-            position: relative;
-            width: 100%;
-            background-color: #e3d5ca;
-            min-height: 100px;
-            padding: 20px 50px;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 20px;
-        }
-        footer .links, 
-        footer .menu{
-            position: relative;
-            display: flex; 
-            justify-content: center;
-            align-items: center;
-            margin: 10px 0;
-            flex-wrap: wrap;
-        }
-        footer .links li,
-        footer .menu li{
-            list-style-type: none;
-        }
-        footer .links li a{
-            font-size: 60px;
-            padding: 20px;
-            color: rgb(255, 255, 255);
-            margin: 0 10px;
-            display: inline-block;
-            transition: 0.5s;
-        }
-        footer .links li a:hover{
-            transform: translateY(-10px);
-            color: #695c54;
-        }
-        footer .menu li a{
-            font-size: 60px;
-            color: rgb(255, 255, 255);
-            margin: 0 10px;
-            display: inline-block;
-            transition: 0.5s;
-            text-decoration: none;
-        }
-        footer .menu li a:hover{
-            color: #695c54;
-        }
-
     </style>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4261af9220.js" crossorigin="anonymous"></script>
+    
   </head>
   <body>
     <!-- Nav -->
@@ -189,7 +42,8 @@
         <div class="right">
             <div class="content-box">
                 <h2>Activities in Bangkok</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolor adipisci voluptatum id quae autem odit rerum hic explicabo repellendus ab quaerat dicta nesciunt eos, temporibus ex tempora reiciendis vitae non quas ipsam soluta pariatur? Alias, nobis quos, architecto accusantium accusamus perspiciatis similique possimus nostrum nulla labore provident maxime incidunt velit beatae nam blanditiis, sint odit voluptas corrupti enim ut perferendis? Quibusdam nostrum autem, praesentium ea atque consequatur voluptas voluptatum vero magni, dicta eum laboriosam iusto itaque aspernatur impedit modi quidem aut neque optio velit doloremque. Cumque neque mollitia laboriosam, veritatis facere esse tempore consequuntur doloremque. Itaque recusandae nemo quidem?</p>
+                <p>There are many interesting activities you should do while you’re here. One of the things that you shouldn’t miss is getting a message. It could be anything from Thai Massage, aroma massage to massage candle. You can get 1 hour of very high quality massage for a more affordable price elsewhere. A traditional Thai massage is when the practitioner uses their hands, thumbs, elbows, forearms and sometimes feet to press and reduce tension in your muscle. It is an ancient practice that was used to help reduce body discomfort and also calm your anxieties and energize you. These are some places that we really like to go, although not all of them offer Thai massage. 
+                </p>
             </div>
         </div>
     </section>
@@ -248,7 +102,7 @@
                 <li><a href = mailto:"ntanpairoj1@babson.edu"><i class="fa-solid fa-envelope"></i></a></li>
             </ul>
             <ul class="menu">
-                <li><a href="1-index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="5-sitemap.html">Sitemap</a></li>
                 <li><a href="6-contact.html">Contact</a></li>
             </ul>

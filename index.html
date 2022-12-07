@@ -12,10 +12,10 @@
     <style>
         
         h2{
-            font-size: 80px;
+            font-size: 20px;
         }
         p{
-            font-size: 60px;
+            font-size: 16px;
         }
         .body{
             display: flex;
@@ -32,7 +32,7 @@
             background-position: center;
         }
         .logo a{
-            font-size: 80px;
+            font-size: 20px;
             color: rgb(255, 255, 255);
             text-decoration: none;
         }
@@ -54,7 +54,7 @@
             color: rgb(255, 255, 255);
             text-decoration: none;
             font-weight: bold;
-            font-size: 60px;
+            font-size: 20px;
         }
         nav ul li a:hover{
             color: #d5bdaf;
@@ -72,19 +72,20 @@
         }
         /* hero */
         .hero-content{
-            transform: translate(0%,110%)       
+            transform: translate(0%,150%);  
+            position: relative;    
         }
         .hero-content h1{
             text-align: center;
             font-weight: 800;
-            font-size: 120px;
+            font-size: 20px;
             color: white;
             font-family: 'Playfair Display SC', serif;
         }
         .hero-content p{
             text-align: center;
             font-weight: 400;
-            font-size: 50px;
+            font-size: 16px;
             color: white;
         }
 
@@ -143,6 +144,7 @@
             flex: 1 1 350px;
             padding: 2rem;
         }
+
         /* footer */
         footer{
             position: relative;
@@ -169,8 +171,8 @@
             list-style-type: none;
         }
         footer .links li a{
-            font-size: 60px;
-            padding: 20px;
+            font-size: 20px;
+            padding: 10px;
             color: rgb(255, 255, 255);
             margin: 0 10px;
             display: inline-block;
@@ -181,7 +183,7 @@
             color: #695c54;
         }
         footer .menu li a{
-            font-size: 60px;
+            font-size: 20px;
             color: rgb(255, 255, 255);
             margin: 0 10px;
             display: inline-block;
@@ -191,7 +193,33 @@
         footer .menu li a:hover{
             color: #695c54;
         }
-    
+
+        /* Phone view */
+        @media screen and (orientation:portrait){
+            .hero-content{
+            transform: translate(0%,50%);  
+            position: relative;    
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 10px;
+        }
+        footer{
+            position: relative;
+            width:auto;
+            background-color: #e3d5ca;
+            min-height: 100px;
+            /* padding: 20px 50px; */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        }
+
 
     </style>
     <!-- google font -->
@@ -201,11 +229,6 @@
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/4261af9220.js" crossorigin="anonymous"></script>
-
-    <!-- Weather Widget -->
-    <script>
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-    </script>
 
 </head>
 <body>
@@ -227,17 +250,19 @@
     <section class="content" id="content">
         <div class="row-1">
             <div class="img-1">
-                <img src="images/index-2.jpeg" alt="about-bangkok" title="Bangkok Food">
+                <img id="img-1" src="images/index-2.jpeg" alt="about-bangkok" title="Bangkok">
             </div>
             <div class="content-1">
                 <h2>About Bangkok</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet labore reprehenderit nesciunt vel aspernatur, neque unde consectetur laudantium mollitia nobis eaque dolorem ipsam! Iste deserunt similique id dolores sint aliquid.</p>
+                <p>Hello! We would love to introduce you to our city, Bangkok. Bangkok is the capital city of Thailand, which is located in Southeast Asia. It is a hub for art, culture, development and food. From the iconic Tuktuk, to floating markets, to delicious food, it is a vibrant place that has so much to offer. 
+                </p>
             </div>
         </div>
         <div class="row-2">
             <div class="content-2">
                 <h2>About Bangkok</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet labore reprehenderit nesciunt vel aspernatur, neque unde consectetur laudantium mollitia nobis eaque dolorem ipsam! Iste deserunt similique id dolores sint aliquid.</p>   
+                <p>Before getting off ourselves, we would like to sum up a few things to note before your first visit to Bangkok. Thai people take some customs seriously, especially in places like Temples or palaces. Please do your research and dress appropriately to avoid inconveniences! Do return the ‘wai’ greeting, it is a common way to say hello and be friendly. Pay attention to where people take their shoes off when entering places such as temples, homes and even some shops. There are a few other things but the best bet is to follow the locals. Other than that Thai people are very warm and welcoming so we hope you have a really good time while you’re here!
+                </p>   
             </div>
             <div class="img-2">
                 <img src="images/index-4.jpeg" alt="about-bangkok" title="bangkok mall">
@@ -251,10 +276,33 @@
             <li><a href = mailto:"ntanpairoj1@babson.edu"><i class="fa-solid fa-envelope"></i></a></li>
         </ul>
         <ul class="menu">
-            <li><a href="1-index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="5-sitemap.html">Sitemap</a></li>
             <li><a href="6-contact.html">Contact</a></li>
         </ul>
     </footer>
+    <script>
+        const slides = [
+            "images/bangkok-home-2.jpg",
+            "images/bangkok-home-4.jpg",
+            "images/index-2.jpeg",
+        ];
+        const imageEl = document.getElementById("img-1");
+        let i=0;
+        
+        function slideShow(){
+            if(i == slides.length){
+                i=0;}
+            imageEl.src = slides[i];    
+            i = i + 1;
+            setTimeout(slideShow,1000);    
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            slideShow();
+        });
+           
+    </script>
+
 </body>
 </html>

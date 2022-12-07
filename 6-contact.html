@@ -13,24 +13,25 @@
     <style>
       
       *{
-        font-size: 50px;
+        font-size: 16px;
       }
       h1 {
-        font-size: 80px;
+        font-size: 20px;
       }
       h2 {
-        font-size: 60px;
+        font-size: 16px;
       }
       p {
-        font-size: 50px;
+        font-size: 16px;
       }
       body {
         background-color: #d6ccc2;
-        font-size: 40px;
+        font-size: 16px;
       }
       .container {
         width: 80%;
         margin: auto;
+        margin-top: 40px;
       }
       .contact-box {
         background-color: white;
@@ -57,7 +58,7 @@
             width: 100%;
         }
         .logo a{
-            font-size: 80px;
+            font-size: 20px;
             color: rgb(255, 255, 255);
             text-decoration: none;
         }
@@ -79,7 +80,7 @@
             color: rgb(255, 255, 255);
             text-decoration: none;
             font-weight: bold;
-            font-size: 60px;
+            font-size: 16px;
         }
         nav ul li a:hover{
             color: #7e6b61;
@@ -106,9 +107,6 @@
             align-items: center;
             flex-direction: column;
             margin-top: 20px;
-            position: fixed;
-            display: block;            
-            bottom: 0;
         }
         footer .links, 
         footer .menu{
@@ -124,7 +122,7 @@
             list-style-type: none;
         }
         footer .links li a{
-            font-size: 60px;
+            font-size: 20px;
             padding: 20px;
             color: rgb(255, 255, 255);
             margin: 0 10px;
@@ -136,7 +134,7 @@
             color: #695c54;
         }
         footer .menu li a{
-            font-size: 60px;
+            font-size: 20px;
             color: rgb(255, 255, 255);
             margin: 0 10px;
             display: inline-block;
@@ -170,10 +168,7 @@
       <div class="contact-box">
         <div class="contact-left">
           <h2>Send Us Messages</h2>
-          <form
-            action="https:https://oim-apis.herokuapp.com/form"
-            method="post"
-          >
+          <form>
             <fieldset>
               <legend>Your Information:</legend>
               <div class="name">
@@ -203,8 +198,9 @@
                 <label for="comments">Comments</label>
                     <textarea id="comments" name="comments" rows="5" cols="25"></textarea>          
               </div>
+              <div id="result">...</div>
               <div class="next">
-                <button type="submit">Submit</button>
+                <button id="submit" type="submit">Submit</button>
                 <button type="reset">Reset</button>
               </div>
             </fieldset>
@@ -230,5 +226,33 @@
             <li><a href="6-contact.html">Contact</a></li>
         </ul>
     </footer>    
+    <script>
+        function validation(){
+          console.log("starting function validation");
+          const myForm = document.querySelector("form");
+          const nameEl = myForm["name"].value;
+          const emailEl = myForm["email"].value;
+          const commentsEl = myForm["comments"].value;
+          const resultEl = getElementById("result");
+
+          if (nameEl.length == 0){
+            resultEl.innerText = "Please Enter a Name";
+            resultEl.style.color="red";} 
+            else if (emailEl.length == 0){
+            resultEl.innerText = "Please Enter an Email";
+            resultEl.style.color="red";
+          } else if (commentsEl.length == 0){
+            resultEl.innerText = "Please Enter some Comments!";
+            resultEl.style.color="red";
+          } else {
+            resultEl.innerText = "Thank you for your comment! We will get back to you shortly";
+            resultEl.style.color="green";
+          }
+        }
+
+        document.getElementById("submit").addEventListener("click", function (){
+        validation();
+      });
+    </script>
   </body>
 </html>
